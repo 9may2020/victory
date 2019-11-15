@@ -1,0 +1,22 @@
+.book-item {
+    width: 100%;
+    padding: 20px;
+    font-size: 13pt;
+}
+
+.book-item .img {
+    width: 150px;
+    float: left;
+}
+
+.book-item .img img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.book-item .description {
+    float: left;
+    width: calc(100% - 150px);
+    padding-left: 20px;
+}
+

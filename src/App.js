@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Router, Route } from "react-router-dom";
+import { createHashHistory } from "history";
+import HomePage from "./pages/home";
+import MusicPage from "./pages/music";
+import VideoPage from "./pages/video";
+import BooksPage from "./pages/books";
+import Header from "./components/Header";
+import EventsPage from "./pages/events";
+import LentaPage from "./pages/lenta";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const browserHistory = createHashHistory();
+
+export const App = () => (
+  <Router history={browserHistory}>
+    <Header />
+    <Route path={"/"} component={HomePage} exact />
+    <Route path={"/music"} component={MusicPage} />
+    <Route path={"/video"} component={VideoPage} />
+    <Route path={"/books"} component={BooksPage} />
+    <Route path={"/events"} component={EventsPage} />
+    <Route path={"/lenta"} component={LentaPage} />
+  </Router>
+);
 
 export default App;

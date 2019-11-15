@@ -1,0 +1,10 @@
+.event-cards-container{
+    padding: 20px 0;
+}
+
+.event-cards-container h2{
+    padding-left: 1.5%;
+    display: block;
+    float: left;
+    width: 100%;
+}

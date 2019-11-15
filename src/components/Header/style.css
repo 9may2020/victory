@@ -1,0 +1,80 @@
+header .navbar {
+  border-radius: 0;
+  min-width: 992px;
+}
+
+.navbar .container {
+  width: 992px !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+  background: none;
+}
+
+.navbar-inverse {
+  background: rgba(0, 0, 0, 0.65) !important;
+}
+
+#myNavbar ul {
+  float: right !important;
+  margin-right: -15px;
+}
+
+#myNavbar ul li {
+  padding: 40px 15px 30px;
+  text-transform: uppercase;
+  float: left;
+}
+
+#myNavbar ul li.active a {
+  color: #eb0000;
+}
+
+#myNavbar ul li.active > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-bottom: 2px solid #eb0000;
+  bottom: 0;
+  transition: all 0.2s;
+}
+
+#myNavbar ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-inverse #myNavbar li:hover a::after,
+#myNavbar ul li a:hover {
+  border-bottom: 2px solid #eb0000;
+  color: #eb0000;
+}
+
+#myNavbar ul li a {
+  padding: 0 0 5px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.2s ease-in 0.2s;
+}
+
+header .navbar-brand {
+  padding: 15px;
+}
+
+header .navbar-header {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+header .navbar-brand img {
+  width: 80px;
+  border-radius: 2px;
+}
+
+header .navbar {
+  margin-bottom: 0;
+}

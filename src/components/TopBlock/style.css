@@ -1,0 +1,21 @@
+.top-block {
+  background-size: cover !important;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  min-height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(242, 0, 0, 0.55);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
